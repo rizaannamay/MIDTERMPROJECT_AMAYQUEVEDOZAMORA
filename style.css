@@ -191,10 +191,11 @@ body{
     background-color:#f5f5f5;
 }
 
-h2{
+h1{
     text-align:center;
     color:#1a3d6d;
     margin:30px 0;
+    font-size: medium;
 }
 
 /* NAVIGATION */
@@ -303,45 +304,61 @@ nav a:hover{
 
 /* QUOTE */
 .quote{
-    background:#f6fbff;
-    padding:15px;
+    background:#e4edfe(207 78% 5%);
+    padding:20px;
     border-radius:10px;
     font-size:15px;
     margin-bottom:15px;
     line-height:1.5;
-    border-left:3px solid #4aa3ff;
+    border-color: #e4edfe;
 }
 
 /* COMMENTS */
 .comments-list{
-    list-style:none;
-    background:#f9fbff;
+    list-style: none;
+    background:#e4edfe;
     padding:10px;
     border-radius:10px;
-    min-height:60px;
+    min-height:70px;
     margin-bottom:10px;
+
 }
+h5{
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    text-align: center;
+    color :#767575;
+    min-height:40px;
+    margin-bottom:10px
+}
+
 
 .comment-input{
     width:100%;
-    padding:8px;
-    border-radius:8px;
+    padding:10px;
+    border-radius:10px;
     border:1px solid #ccc;
-    margin-bottom:8px;
+    margin-bottom:20px;
 }
 
+
 .comments-section button{
-    width:100%;
-    padding:8px;
-    border:none;
-    border-radius:6px;
+    width:40%;
+    padding:10px;
+    border-radius:10px;
+    border: none;
     background:#4aa3ff;
     color:white;
     cursor:pointer;
+    display: block;
+    margin: auto;
 }
 
 .comments-section button:hover{
-    background:#2e84db;
+    background-color:#8bace8;
+    color:#000;
+    border-color:#6a8cff;
 }
 
 /* RESPONSIVE */
