@@ -10,7 +10,7 @@ font-family:Arial, sans-serif;
 body{
 margin:0;
 padding:0;
-background:linear-gradient(135deg,#ffe6f0,#fff5cc,#e0f7ff);
+background:linear-gradient(135deg,#912b54,#dbc56c,#e0f7ff);
 color:#333;
 min-height:100vh;
 }
@@ -78,7 +78,7 @@ padding:30px;
 }
 
 .developer-card{
-background:linear-gradient(145deg,#ffffff,#fff0f5);
+background:linear-gradient(145deg,#f3eeee,#fff0f5);
 border-radius:12px;
 box-shadow:0 6px 15px rgba(0,0,0,0.15);
 width:250px;
