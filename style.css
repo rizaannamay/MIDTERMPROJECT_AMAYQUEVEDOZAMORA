@@ -1,0 +1,312 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* BODY */
+body{
+margin:0;
+padding:0;
+background:linear-gradient(135deg,#ffe6f0,#fff5cc,#e0f7ff);
+color:#333;
+min-height:100vh;
+}
+
+/* NAVIGATION */
+nav{
+text-align:right;
+padding:15px;
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+margin:0 10px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff4da6;
+}
+
+.navbar ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.navbar a{
+color:#444;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#ff66cc;
+}
+
+.tagline{
+font-size:1.2rem;
+color:#444;
+margin-bottom:2rem;
+}
+
+.intro{
+max-width:800px;
+margin:0 auto 3rem;
+text-align:left;
+}
+
+.intro h2{
+color:#ff4da6;
+margin-bottom:1rem;
+}
+
+/* DEVELOPERS */
+.developers-container{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.developer-card{
+background:linear-gradient(145deg,#ffffff,#fff0f5);
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+width:250px;
+padding:20px;
+margin:10px;
+text-align:center;
+transition:transform 0.3s,box-shadow 0.3s;
+}
+
+.developer-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:1.2em;
+color:#ff4da6;
+}
+
+.profile-image img{
+max-width:100px;
+border-radius:50%;
+margin-bottom:10px;
+border:3px solid #ffd6e8;
+}
+
+.bio{
+font-style:italic;
+font-size:0.9em;
+color:#444;
+}
+
+/* SECTIONS */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* PORTFOLIO */
+#portfolio{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:70vh;
+}
+
+/* CARD */
+.card{
+background:linear-gradient(145deg,#ffffff,#ffeef7);
+padding:40px;
+border-radius:18px;
+width:400px;
+box-shadow:0 10px 35px rgba(255,105,180,0.3);
+}
+
+/* PORTFOLIO BUTTONS */
+.portfolio-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.portfolio-buttons button{
+padding:12px;
+font-size:15px;
+border-radius:10px;
+border:none;
+background:linear-gradient(135deg,#ff7eb3,#ffb3d9);
+color:white;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.portfolio-buttons button:hover{
+background:linear-gradient(135deg,#ff4da6,#ff99cc);
+transform:translateY(-3px);
+}
+
+/* POSTER */
+.poster-container{
+text-align:center;
+margin:30px 0;
+}
+
+.poster-container img{
+width:80%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+.poster-container img:hover{
+transform:scale(1.05);
+}
+
+/* FAVORITES PAGE */
+
+h2{
+text-align:center;
+color:#1a3d6d;
+margin-bottom:50px;
+}
+
+/* GRID */
+.artwork-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARD */
+.artwork{
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.2s;
+position:relative;
+}
+
+.artwork:hover{
+transform:translateY(-6px);
+}
+
+/* IMAGE */
+.placeholder-img{
+height:160px;
+background:linear-gradient(135deg,#d3e8ff,#f1fbff);
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#3b4c6b;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.placeholder-img img:hover{
+transform:scale(1.05);
+}
+
+/* HEART */
+.heart1{
+position:absolute;
+top:12px;
+right:12px;
+cursor:pointer;
+font-size:26px;
+transition:0.2s;
+}
+
+.heart1:hover{
+transform:scale(1.2);
+}
+
+/* POP EFFECT */
+.pop{
+transform:scale(1.5);
+}
+
+/* QUOTE */
+.quote{
+background:#f6fbff;
+padding:10px;
+border-radius:10px;
+font-size:15px;
+margin-bottom:10px;
+}
+
+/* COMMENTS */
+.comments-section{
+margin-top:10px;
+}
+
+.comments-list{
+list-style:none;
+background:#f9fbff;
+padding:8px;
+border-radius:10px;
+min-height:40px;
+margin-bottom:8px;
+}
+
+.comments-list li{
+padding:4px;
+border-bottom:1px solid #ddd;
+}
+
+.comments-list li:last-child{
+border-bottom:none;
+}
+
+.comment-input{
+width:100%;
+padding:6px;
+margin-bottom:6px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.comments-section button{
+padding:6px 12px;
+border:none;
+border-radius:6px;
+background:#4aa3ff;
+color:white;
+cursor:pointer;
+}
+
+.comments-section button:hover{
+background:#2e84db;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.artwork-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.artwork-grid{
+grid-template-columns:1fr;
+}
+}
