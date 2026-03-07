@@ -312,13 +312,21 @@ nav a:hover{
 /* COMMENTS */
 .comments-list{
     list-style: none;
-    background:#e4edfe;
+    background:#d8e4f9;
     padding:10px;
     border-radius:10px;
     min-height:70px;
     margin-bottom:10px;
 
 }
+
+.comments-list:hover {
+    background-color: #4aa3ff;  
+    color: #fff;                 
+    cursor: pointer;             
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 h5{
     padding:8px;
@@ -341,7 +349,7 @@ h5:hover{
     width:100%;
     padding:8px;
     border-radius:10px;
-    border:1px solid #ccc;
+    border:1px solid #4aa3ff;c;
     margin-bottom:20px;
 }
 
@@ -359,7 +367,7 @@ h5:hover{
 }
 
 .comments-section button:hover{
-    background-color:#8bace8;
+    background-color:#a1bbeb;
     border-color:#6a8cff;
 }
 
