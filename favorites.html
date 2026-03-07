@@ -1,160 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Favorites</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<nav>
-    <a href="home.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="favorites.html">Favorites</a>
-</nav>
-
 <body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="favorites.html">Favorites</a>
+    </nav>
 
-<h2>Favorite Quotes</h2>
+    <h1><b>OUR FAVORITES </b></h1>
 
-<div class="artwork-grid">
+    <div class="artwork-grid">
+        <!-- CARD 1 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture6.png" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">Connections span across the globe.<br> Every link builds a stronger future.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
 
-<!-- CARD 1 -->
-<div class="artwork">
+        <!-- CARD 2 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture5.webp" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">Progress is written in lines of code.<br> Each error is proof you’re moving forward.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
 
-<div class="placeholder-img">
-Image Placeholder
-</div>
+        <!-- CARD 3 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture4.webp" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">Master the basics today. To lead innovation tomorrow.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
 
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
+        <!-- CARD 4 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture3.webp" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">When human creativity meets machine precision, true intelligence is born in synergy.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
 
-<p class="quote">Building My Tech Future.<br>Powered by Passion and Programming.</p>
+        <!-- CARD 5 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture2.jpg" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">Curiosity is the spark of innovation.<br> Every dream you chase fuels tomorrow’s technology.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
 
-<div class="comments-section">
+        <!-- CARD 6 -->
+        <div class="artwork">
+            <div class="placeholder-img">
+                <img src="images/picture1.jpg" alt="">
+            </div>
+            <div class="heart1" onclick="toggleLike(this)">🤍</div>
+            <p class="quote">Stay bold in learning – technology rewards persistence.Your patience in coding builds tomorrow’s solutions.</p>
+            <h5>Comment Section</h5>
+            <div class="comments-section">
+                <ul class="comments-list"></ul>
+                <input class="comment-input" type="text" placeholder="Add comment...">
+                <button onclick="addComment(this)">Post</button>
+            </div>
+        </div>
+    </div>
+    <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="enlargedImage">
+    </div>
 
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-</div>
-
-
-<!-- CARD 2 -->
-<div class="artwork">
-
-<div class="placeholder-img">
-Image Placeholder
-</div>
-
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
-
-<p class="quote">Technology changes fast – stay curious, stay ahead.<br> Your struggles in programming are shaping your success.</p>
-
-<div class="comments-section">
-
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-</div>
-
-
-<!-- CARD 3 -->
-<div class="artwork">
-
-<div class="placeholder-img">
-Image Placeholder
-</div>
-
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
-
-<p class="quote">Master the basics today. <br>To lead innovation tomorrow.</p>
-
-<div class="comments-section">
-
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-</div>
-
-<!-- CARD 2 -->
-<div class="artwork">
-
-<div class="placeholder-img">
-Image Placeholder
-</div>
-
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
-
-<p class="quote">Technology changes fast – stay curious, stay ahead.<br> Your struggles in programming are shaping your success.</p>
-
-<div class="comments-section">
-
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-<!-- CARD 2 -->
-<div class="artwork">
-
-<div class="placeholder-img">
-Image Placeholder
-</div>
-
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
-
-<p class="quote">Technology changes fast – stay curious, stay ahead.<br> Your struggles in programming are shaping your success.</p>
-
-<div class="comments-section">
-
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-<!-- CARD 2 -->
-<div class="artwork">
-
-<div class="placeholder-img">
-Image Placeholder
-</div>
-
-<div class="heart1" onclick="toggleLike(this)">🤍</div>
-
-<p class="quote">Technology changes fast – stay curious, stay ahead.<br> Your struggles in programming are shaping your success.</p>
-
-<div class="comments-section">
-
-<ul class="comments-list"></ul>
-
-<input class="comment-input" type="text" placeholder="Add comment...">
-
-<button onclick="addComment(this)">Post</button>
-
-</div>
-
-</div>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

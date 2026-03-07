@@ -239,7 +239,19 @@ function acceleration() {
     let result = (final - initial) / time;
     alert("Acceleration: " + result);
 }
+// Image enlargement function
+	function enlargeImage(element) {
+		const modal = document.getElementById('imageModal');
+		const modalImg = document.getElementById('enlargedImage');
+		const img = element.querySelector('img');
+		
+		modal.style.display = "block";
+		modalImg.src = img.src;
+	}
 
+	function closeModal() {
+        document.getElementById('imageModal').style.display = "none";
+    }
 
 /* HEART TOGGLE */
 function toggleLike(element){
