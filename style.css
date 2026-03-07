@@ -7,32 +7,40 @@ font-family:Arial, sans-serif;
 }
 
 /* BODY */
-body{
-margin:0;
-padding:0;
-background:linear-gradient(135deg,#912b54,#dbc56c,#e0f7ff);
-color:#333;
-min-height:100vh;
+body {
+  background-image: url('images/bgg.png');
+  background-size:cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh; 
+}
+body h1 {
+  color: #b3c6dc;
+  font-weight: 800;
+}
+p.tagline {
+  color: #decfcf;
+  font-weight: bold;
 }
 
 /* NAVIGATION */
 nav{
 text-align:right;
-padding:15px;
-background:rgba(255,255,255,0.6);
+padding:20px;
+background:rgba(196, 136, 91, 0.6);
 backdrop-filter:blur(10px);
 }
 
 nav a{
 text-decoration:none;
-color:#444;
+color:#2d2918;
 margin:0 10px;
 font-weight:bold;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#ff4da6;
+color:#b3c6dc;
 }
 
 .navbar ul{
@@ -42,7 +50,7 @@ gap:20px;
 }
 
 .navbar a{
-color:#444;
+color:#694a22;
 text-decoration:none;
 font-size:18px;
 font-weight:bold;
@@ -74,43 +82,44 @@ margin-bottom:1rem;
 display:flex;
 justify-content:space-around;
 flex-wrap:wrap;
-padding:30px;
+padding:5px;
 }
 
 .developer-card{
-background:linear-gradient(145deg,#f3eeee,#fff0f5);
-border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.15);
-width:250px;
-padding:20px;
+background:linear-gradient(145deg,#78a1d3,#f15c1c);
+border-radius:15px;
+box-shadow:0 6px 15px srgba(235, 190, 118, 0.952);
+width:400px;
+padding:35px;
 margin:10px;
 text-align:center;
-transition:transform 0.3s,box-shadow 0.3s;
+transition:transform 0.5s,box-shadow 0.5s;
 }
 
 .developer-card:hover{
 transform:translateY(-10px) scale(1.03);
-box-shadow:0 12px 25px rgba(0,0,0,0.2);
+box-shadow:0 15px 25px rgba(0,0,0,0.2);
 }
 
 h3{
 margin-top:0;
-margin-bottom:10px;
-font-size:1.2em;
-color:#ff4da6;
+margin-bottom:15px;
+font-size:1.0em;
+color:#292a31;
 }
 
 .profile-image img{
-max-width:100px;
+max-width:300px;
 border-radius:50%;
 margin-bottom:10px;
-border:3px solid #ffd6e8;
+border:3.0px solid #1c1b19;
 }
 
 .bio{
 font-style:italic;
-font-size:0.9em;
-color:#444;
+font-weight: bold;
+font-size:1.0em;
+color:#080000;
 }
 
 /* SECTIONS */
@@ -131,9 +140,9 @@ min-height:70vh;
 .card{
 background:linear-gradient(145deg,#ffffff,#ffeef7);
 padding:40px;
-border-radius:18px;
+border-radius:20px;
 width:400px;
-box-shadow:0 10px 35px rgba(255,105,180,0.3);
+box-shadow:0 10px 35px rgba(208, 139, 36, 0.3);
 }
 
 /* PORTFOLIO BUTTONS */
