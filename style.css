@@ -147,6 +147,13 @@ align-items:center;
 min-height:70vh;
 }
 
+
+
+h3{
+    color: #3a3939;
+    margin-bottom: 10px;
+}
+
 /* CARD */
 .card{
 background:linear-gradient(145deg,#ee7676,#ffeef7);
