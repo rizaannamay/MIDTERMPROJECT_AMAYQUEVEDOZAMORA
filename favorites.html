@@ -113,6 +113,71 @@
     <!-- HEART BUBBLE CONTAINER (for floating hearts) -->
     <div id="bubble-area"></div>
     
-    <script src="script.js"></script>
+    <script>
+        // Image hover to enlarge	
+	function enlargeImage(element) {
+		const modal = document.getElementById('imageModal');
+		const modalImg = document.getElementById('enlargedImage');
+		const img = element.querySelector('img');
+		
+		modal.style.display = "block";
+		modalImg.src = img.src;
+	}
+
+	function closeModal() {
+        document.getElementById('imageModal').style.display = "none";
+    }
+
+        function toggleLike(element){
+
+            if(element.textContent=="🤍"){
+                element.textContent="❤️";
+
+                for(let i=0;i<40;i++){
+
+                    let heart=document.createElement("div");
+                    heart.className="bubble-heart";
+                    heart.innerHTML="❤️";
+
+                    heart.style.left=Math.random()*100+"vw";
+                    heart.style.fontSize=(Math.random()*40+30)+"px";
+
+                    document.getElementById("bubble-area").appendChild(heart);
+
+                    setTimeout(()=>{
+                        heart.remove();
+                    },6000);
+
+                }
+
+            }
+            else{
+                element.textContent="🤍";
+            }
+
+        }
+
+        /* ADD COMMENT */
+        function addComment(button){
+
+            let commentInput=button.previousElementSibling;
+            let text=commentInput.value.trim();
+
+            if(text!=""){
+
+            let list=button.parentElement.querySelector(".comments-list");
+
+            let li=document.createElement("li");
+
+            li.textContent=text;
+
+            list.appendChild(li);
+
+            commentInput.value="";
+
+            }  
+        }
+
+    </script>
 </body>
 </html>
