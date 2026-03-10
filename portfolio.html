@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+    <body>
 
-<nav>
-    <a href="home.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="favorites.html">Favorites</a>
-</nav>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="favorites.html">Favorites</a>
+    </nav>
 
-<section id="portfolio">
+        <section id="portfolio">
 
-<div class="card">
+            <div class="card">
+                <h2>Functional Integration</h2>
 
-<h2>Functional Integration</h2>
+                <div class="poster-container">
+                    <img src="images/poster.png" alt="Functional Integration Poster">
+                </div>
 
-<div class="poster-container">
-<img src="images/poster.png" alt="Functional Integration Poster">
-</div>
+                <h3 class="subtitle">Pick your choice</h3>
 
-<h3 class="subtitle">Pick your choice</h3>
+                <div class="portfolio-buttons">
 
-<div class="portfolio-buttons">
+                    <button onclick="ComputeTemperature()">1. Temperature Converter</button>
 
-<button onclick="ComputeTemperature()">1. Temperature Converter</button>
+                    <button onclick="TheLongerWord()">2. The Longer Word</button>
 
-<button onclick="TheLongerWord()">2. The Longer Word</button>
+                    <button onclick="basicCalculator()">3. Basic Calculator</button>
 
-<button onclick="basicCalculator()">3. Basic Calculator</button>
+                    <button onclick="showUserBirthStone()">4. Know My Birthstone</button>
 
-<button onclick="showUserBirthStone()">4. Know My Birthstone</button>
+                    <button onclick="acceleration()">5. Compute for Acceleration</button>
 
-<button onclick="acceleration()">5. Compute for Acceleration</button>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </section>
 
-</section>
+        <script src="script.js"></script>
 
-<script src="script.js"></script>
-
-</body>
+    </body>
 </html>
