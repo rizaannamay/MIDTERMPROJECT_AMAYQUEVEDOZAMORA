@@ -239,6 +239,7 @@ function acceleration() {
     let result = (final - initial) / time;
     alert("Acceleration: " + result);
 }
+
 // Image enlargement function
 	function enlargeImage(element) {
 		const modal = document.getElementById('imageModal');
@@ -256,39 +257,39 @@ function acceleration() {
 /* HEART TOGGLE */
 function toggleLike(element){
 
-element.classList.add("pop");
+	element.classList.add("pop");
 
-setTimeout(()=>{
-element.classList.remove("pop");
-},200);
+	setTimeout(()=>{
+	element.classList.remove("pop");
+	},200);
 
-if(element.textContent=="🤍"){
-element.textContent="❤️";
-}
-else{
-element.textContent="🤍";
-}
+	if(element.textContent=="🤍"){
+	element.textContent="❤️";
+	}
+	else{
+	element.textContent="🤍";
+	}
 
 }
 
 /* ADD COMMENT */
 function addComment(button){
 
-let commentInput=button.previousElementSibling;
-let text=commentInput.value.trim();
+	let commentInput=button.previousElementSibling;
+	let text=commentInput.value.trim();
 
-if(text!=""){
+	if(text!=""){
 
-let list=button.parentElement.querySelector(".comments-list");
+	let list=button.parentElement.querySelector(".comments-list");
 
-let li=document.createElement("li");
+	let li=document.createElement("li");
 
-li.textContent=text;
+	li.textContent=text;
 
-list.appendChild(li);
+	list.appendChild(li);
 
-commentInput.value="";
+	commentInput.value="";
 
-}
+	}
 
 }
