@@ -20,9 +20,15 @@ body h1 {
   font-size:50px;
 }
 p.tagline {
-  color: #decfcf;
+  color: #fffefe;
   font-weight: bold;
   font-size: 30px;
+}
+section {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* NAVIGATION */
@@ -348,13 +354,16 @@ h5{
     border:1px solid #ccc;
     border-radius:10px;
     text-align: center;
-    color :#474242;
+    color :#221f1f;
     min-height:40px;
-    margin-bottom:10px
+    margin-bottom:10px;
+    border-color:#1599e6;
+    background-color:#e4edfe;
+    
 }
 
 h5:hover{
-    background-color:#e4edfe;
+    background-color:rgb(224, 117, 117);
     color:#221f1f;
     border-color:#1599e6;
     cursor:pointer;
@@ -382,8 +391,8 @@ h5:hover{
 }
 
 .comments-section button:hover{
-    background-color:#ec643b;
-    border-color:#6a8cff;
+   background-color: rgb(224, 117, 117);
+   border-color: #6a8cff;
 }
 
 /* RESPONSIVE */
