@@ -254,13 +254,11 @@ function acceleration() {
         document.getElementById('imageModal').style.display = "none";
     }
 
-/* HEART TOGGLE + BUBBLE HEARTS */
 function toggleLike(element){
 
 	if(element.textContent=="🤍"){
 		element.textContent="❤️";
 
-		// CREATE MANY BIG HEARTS
 		for(let i=0;i<40;i++){
 
 			let heart=document.createElement("div");

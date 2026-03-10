@@ -433,7 +433,6 @@ h5:hover{
     animation:floatHeart 3s ease-out forwards;
 }
 
-/* floating animation */
 @keyframes floatHeart{
 
     0%{
@@ -442,7 +441,7 @@ h5:hover{
     }
 
     100%{
-        transform:translateY(-1200px) scale();
+        transform:translateY(-1200px) scale(1.5);
         opacity:0;
     }
 
