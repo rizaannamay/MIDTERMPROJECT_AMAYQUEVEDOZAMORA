@@ -8,12 +8,12 @@ function ComputeTemperature(){
 	choice = parseFloat(choice);
 
 	if(isNaN(choice)){
-		alert("Invalid input!");
+		alert("Invalid input! Please enter a number.");
 		return;
 	}
 
 	if(choice !== 1 && choice !== 2){
-		alert("Invalid choice!");
+		alert("Invalid choice! Please enter 1 or 2.");
 		return;
 	}
 
@@ -25,7 +25,7 @@ function ComputeTemperature(){
 	temperature = parseFloat(temperature);
 
     if(isNaN(temperature)){
-		alert("Invalid input!");
+		alert("Invalid input! Please enter a number.");
 		return;
 	}
 
@@ -54,7 +54,7 @@ function TheLongerWord(){
 	}	
 
 	if (!isNaN(word1)) {
-   	 	alert("Invalid Input");
+   	 	alert("Invalid Input! Please enter a letter.");
 		return;
 	} 
 	
@@ -64,7 +64,7 @@ function TheLongerWord(){
 	}	
 
 	if (!isNaN(word2)) {
-        alert("Invalid Input");
+        alert("Invalid Input! Please enter a letter.");
 		return;
     }
 
@@ -88,7 +88,7 @@ function basicCalculator(){
 	num1 = parseFloat(num1);	
 
 	if (isNaN(num1)){
-		alert("Invalid input");
+		alert("Invalid input! Please enter a number.");
 		return;
 	}
 
@@ -99,7 +99,7 @@ function basicCalculator(){
 	num2 = parseFloat(num2);
 
 	if (isNaN(num2)){
-		alert("Invalid input");
+		alert("Invalid input! Please enter a number.");
 		return;
 	}
 
