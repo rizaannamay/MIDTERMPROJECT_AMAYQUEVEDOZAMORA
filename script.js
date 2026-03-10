@@ -240,7 +240,7 @@ function acceleration() {
     alert("Acceleration: " + result);
 }
 
-// Image enlargement function
+// Image hover to enlarge	
 	function enlargeImage(element) {
 		const modal = document.getElementById('imageModal');
 		const modalImg = document.getElementById('enlargedImage');
@@ -254,7 +254,6 @@ function acceleration() {
         document.getElementById('imageModal').style.display = "none";
     }
 
-/* HEART TOGGLE + BUBBLE HEARTS */
 /* HEART TOGGLE + BUBBLE HEARTS */
 function toggleLike(element){
 
