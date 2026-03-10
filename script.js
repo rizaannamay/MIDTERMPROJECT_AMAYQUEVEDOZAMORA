@@ -254,20 +254,34 @@ function acceleration() {
         document.getElementById('imageModal').style.display = "none";
     }
 
-/* HEART TOGGLE */
+/* HEART TOGGLE + BUBBLE HEARTS */
+/* HEART TOGGLE + BUBBLE HEARTS */
 function toggleLike(element){
 
-	element.classList.add("pop");
-
-	setTimeout(()=>{
-	element.classList.remove("pop");
-	},200);
-
 	if(element.textContent=="🤍"){
-	element.textContent="❤️";
+		element.textContent="❤️";
+
+		// CREATE MANY BIG HEARTS
+		for(let i=0;i<40;i++){
+
+			let heart=document.createElement("div");
+			heart.className="bubble-heart";
+			heart.innerHTML="❤️";
+
+			heart.style.left=Math.random()*100+"vw";
+			heart.style.fontSize=(Math.random()*40+30)+"px";
+
+			document.getElementById("bubble-area").appendChild(heart);
+
+			setTimeout(()=>{
+				heart.remove();
+			},6000);
+
+		}
+
 	}
 	else{
-	element.textContent="🤍";
+		element.textContent="🤍";
 	}
 
 }
@@ -291,5 +305,7 @@ function addComment(button){
 	commentInput.value="";
 
 	}
+
+	
 
 }
